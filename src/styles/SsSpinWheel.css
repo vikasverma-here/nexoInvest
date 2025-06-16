@@ -1,0 +1,200 @@
+.wheel-card {
+    position: relative;
+    min-width: 400px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.SsSpinWheel {
+    min-width: 400px;
+    min-height: 420px;
+}
+.UserHome .wheel-card .text-val{
+    position: absolute;
+    bottom: 2rem;
+}
+.SsSpinWheel .wheel {
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    top: calc(50% - 200px / 2);
+    left: calc(50% - 200px / 2);
+    border-radius: 50%;
+    border: 8px solid rgb(255, 255, 255);
+    margin: -8px;
+    box-shadow: 0 0 6px 6px rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.SsSpinWheel .wheel:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.4) inset;
+    z-index: 1;
+}
+
+.SsSpinWheel .wheel .inner {
+    width: 100%;
+    height: 100%;
+    transition: 5s;
+}
+
+.SsSpinWheel .wheel .inner .slice {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -5px;
+    top: -60px;
+    border-width: 160px 110px 0 110px;
+    border-style: solid;
+    transform-origin: 50% 100%;
+}
+
+.SsSpinWheel .wheel .inner .slice .prize {
+    position: relative;
+    display: block;
+    transform: rotateZ(90deg);
+    left: 26px;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.1rem;
+    margin-top: -85px;
+    margin-left: -42px;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px -1px 0 rgb(88, 86, 81), 1px -1px 0 rgb(88, 86, 81),
+        -1px 1px 0 rgb(88, 86, 81), 1px 1px 0 rgb(88, 86, 81);
+    /* text-wrap: nowrap; */
+}
+
+.SsSpinWheel .wheel .inner .slice.highlighted {
+    border-color: #ff0000 transparent !important;
+    transition: box-shadow 0.5s ease, border-color 0.5s ease;
+}
+
+.SsSpinWheel .wheel .inner .slice.highlighted .prize {
+    font-weight: bold;
+    color: #444444 !important;
+    text-shadow:
+        1px 0px 1px #eaff01, 0px 1px 1px #eee,
+        2px 1px 1px #eaff01, 1px 2px 1px #eee,
+        3px 2px 1px #eaff01, 2px 3px 1px #eee,
+        4px 3px 1px #eaff01, 3px 4px 1px #eee,
+        5px 4px 1px #eaff01, 4px 5px 1px #eee,
+        6px 5px 1px #eaff01, 5px 6px 1px #eee,
+        7px 6px 1px #eaff01;
+    transition: all 0.5s ease;
+}
+
+
+.SsSpinWheel .wheel-outer {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: calc(50% - 300px / 2);
+    left: calc(50% - 300px / 2);
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgb(0, 0, 0),
+        0 0 115px 101px rgba(58, 68, 89, 0.2) inset;
+}
+
+.SsSpinWheel #svg-arrow {
+    position: absolute;
+    top: calc(50% - 235px);
+    left: calc(50% - 101px);
+    z-index: 1;
+    display: none;
+}
+
+.SsSpinWheel #svg-dotted {
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    top: calc(50% - 330px / 2);
+    left: calc(50% - 330px / 2);
+}
+
+.SsSpinWheel #svg-dotted #circle-dotted {
+    fill: transparent;
+    /* stroke: rgb(200, 200, 200); */
+    stroke: rgb(20, 25, 36);
+    stroke-width: 4;
+    stroke-dasharray: 0.1 23;
+    stroke-dashoffset: 19.5;
+    stroke-linecap: round;
+}
+
+.SsSpinWheel button.spinBTN {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 50px / 2);
+    left: calc(50% - 46px / 2);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0);
+    z-index: 10;
+    background: linear-gradient(to bottom,
+            rgb(252, 255, 244) 0%,
+            rgb(223, 229, 215) 30%,
+            rgb(179, 190, 173) 100%);
+            font-size: 1rem;
+}
+
+.SsSpinWheel button.spinBTN:active {
+    transform: scale(0.9);
+}
+
+/* Slices color definitions */
+.SsSpinWheel .wheel .inner .slice:nth-child(1) {
+    border-color: #16a085 transparent;
+    transform: rotate(-60deg);
+}
+
+.SsSpinWheel .wheel .inner .slice:nth-child(2) {
+    border-color: #962bc0 transparent;
+    transform: rotate(-120deg);
+}
+
+.SsSpinWheel .wheel .inner .slice:nth-child(3) {
+    border-color: #34495e transparent;
+    transform: rotate(-180deg);
+}
+
+.SsSpinWheel .wheel .inner .slice:nth-child(4) {
+    border-color: #d35400 transparent;
+    transform: rotate(-240deg);
+}
+
+.SsSpinWheel .wheel .inner .slice:nth-child(5) {
+    border-color: #f39c12 transparent;
+    transform: rotate(-300deg);
+}
+
+.SsSpinWheel .wheel .inner .slice:nth-child(6) {
+    border-color: #c02b58 transparent;
+    transform: rotate(-360deg);
+}
+
+@media screen and (max-width: 499px) {
+    .wheel-card {
+        position: relative;
+        min-width: 300px;
+        min-height: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .SsSpinWheel {
+        min-width: 300px;
+        min-height: 35  0px;
+    }
+}

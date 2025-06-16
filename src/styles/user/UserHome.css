@@ -1,0 +1,210 @@
+
+
+.UserHome .income-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 2rem;
+}
+.UserHome .copy-code-wrapper.ss-card {
+    backdrop-filter: none;
+    width: fit-content;
+    max-width: 100%;
+}
+.UserHome .copy-code-wrapper.ss-card .code {
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.UserHome .copy-code-wrapper.ss-card .code .codebox {
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: #6b60be;
+    padding: 1rem 2rem;
+}
+.UserHome .copy-code-wrapper p {
+    width: fit-content;
+    text-align: left;
+    font-family: var(--ff-poppins);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+.UserHome .copy-code-wrapper.ss-card .code button {
+    color: var(--text-secondary);
+    font-family: var(--ff-poppins);
+    font-size: 1.6rem;
+}
+
+.UserHome .income-wrapper .income-card {
+    padding: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32%;
+}
+
+.UserHome .income-wrapper .income-card .left h5 {
+    font-family: var(--ff-dmsans);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: var(--text-secondary);
+}
+
+.UserHome .income-wrapper .income-card .left p {
+    font-family: var(--ff-dmsans);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    margin-top: 1rem;
+}
+.UserHome .income-wrapper .income-card .left span {
+    font-family: var(--ff-dmsans);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.UserHome .income-wrapper .income-card .right {
+    width: 6rem;
+}
+
+.UserHome .CircularProgressbar {
+    width: 160px;
+}
+
+.UserHome .progress-text {
+    font-family: var(--ff-dmsans);
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: var(--text-secondary);
+    margin-top: -10px;
+}
+
+.UserHome .detail-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.UserHome .detail-wrapper .left {
+    padding: 2.4rem;
+    width: 100%;
+}
+
+.UserHome .detail-wrapper .right {
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.UserHome .detail-wrapper .right .text-val {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--text-secondary);
+    font-family: var(--ff-poppins);
+    margin-top: 2rem;
+}
+
+.UserHome .detail-wrapper .left .detail-table {
+    width: 100%;
+}
+
+.UserHome .detail-wrapper .left .detail-table table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+.UserHome .detail-wrapper .left .detail-table table th,
+.UserHome .detail-wrapper .left .detail-table table td {
+    padding: 1rem;
+    text-align: left;
+    font-family: var(--ff-poppins);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+
+.UserHome .detail-wrapper .left .detail-table table tr {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.UserHome .detail-table,
+.UserHome .detail-table table {
+    width: 100%;
+}
+
+.UserHome .all-buttons {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.UserHome .all-buttons .left {
+    display: flex;
+    gap: 2rem;
+}
+
+.UserHome .all-buttons .left .Button2 {
+    min-width: 15rem;
+}
+
+.UserHome .all-buttons .left .Button2:first-child {
+    background: rgb(34, 193, 195);
+    background: radial-gradient(
+        circle,
+        rgb(255, 0, 136) 0%,
+        var(--main-purple)
+    );
+}
+
+@media screen and (max-width: 768px) {
+    .UserHome .income-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .UserHome .detail-wrapper {
+        flex-direction: column;
+    }
+
+    .UserHome .detail-wrapper .left,
+    .UserHome .detail-wrapper .right {
+        width: 100%;
+    }
+
+    .p-datatable-wrapper {
+        scrollbar-width: none;
+    }
+    .UserHome .all-buttons .left .Button2 {
+        min-width: fit-content;
+    }
+    .UserHome .detail-table {
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .UserHome .all-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .UserHome .income-wrapper {
+        justify-content: space-between;
+    }
+    .UserHome .income-wrapper .income-card {
+        width: 48%;
+    }
+}

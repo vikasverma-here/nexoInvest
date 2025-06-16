@@ -1,0 +1,276 @@
+/* ================== custom offer start ======================== */
+
+.ss_switch {
+  display: inline-block;
+  margin-top: 0.6rem;
+}
+
+.ss_switch input {
+  display: none;
+}
+
+.ss_switch label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 15px;
+  border: 1px solid #cbcbcb;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ss_switch label::after {
+  content: "";
+  display: inherit;
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+  background: var(--blue);
+  transition: 0.3s;
+  position: relative;
+  top: 0.15rem;
+}
+
+.ss_switch input:checked ~ label {
+  border-color: #cbcbcb;
+}
+
+.ss_switch input:checked ~ label::after {
+  translate: 30px 0;
+  background: var(--blue);
+}
+
+.ss_switch input:disabled ~ label {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ================== custom offer end ======================== */
+
+.MatrimonyUserCustomPlan {
+  width: 100%;
+  padding: 2.2rem;
+  font-family: "Inter", sans-serif;
+}
+.MatrimonyUserCustomPlan .customPlan_heading{
+ margin-top: 1rem;
+}
+.MatrimonyUserCustomPlan .customPlan_heading .title {
+  font-size: 3.5rem;
+  /* color: var(--text-primary2); */
+  font-weight: 600;
+}
+.MatrimonyUserCustomPlan .customPlan_heading .subTitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  /* color: var(--text-primary2); */
+  margin-top: 0.6rem;
+}
+.MatrimonyUserCustomPlan .centerDateToggle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+.MatrimonyUserCustomPlan .centerDateToggle .labelName {
+  font-size: 1.5rem;
+  color: var(--black);
+  font-weight: 600;
+}
+.MatrimonyUserCustomPlan .centerDateToggle .customOffervalue {
+  color: var(--blue);
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.2rem 1.6rem;
+  border: 0.08rem solid var(--blue);
+  border-radius: 10rem;
+}
+.MatrimonyUserCustomPlan .offerCards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+  row-gap: 2rem;
+  margin-top: 3.5rem;
+}
+.MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard {
+  min-width: 32%;
+  width: 32%;
+  border-radius: 0.8rem;
+  /* border: 1px solid #e2e2e2; */
+  /* background: var(--white); */
+  box-shadow: -9px 7px 52px 0px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+  padding-bottom: 1.2rem;
+}
+.MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard .popularTag {
+  text-align: center;
+  color: var(--white);
+  padding: 0.3rem;
+  width: 100%;
+  font-size: 1rem;
+}
+.MatrimonyUserCustomPlan
+  .offerCards
+  .MatrimonyCustomOfferCard
+  .popularTag.fill {
+  background-color: var(--main-purple);
+}
+.MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard .center {
+  width: 75%;
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard .planValues {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: center;
+}
+.MatrimonyUserCustomPlan
+  .offerCards
+  .MatrimonyCustomOfferCard
+  .planValues
+  .planName {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.MatrimonyUserCustomPlan
+  .offerCards
+  .MatrimonyCustomOfferCard
+  .planValues
+  .price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  transition: all .3s ease-in-out;
+}
+.MatrimonyUserCustomPlan
+.offerCards
+.MatrimonyCustomOfferCard
+.planValues
+.duration {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  transition: all .3s ease-in-out;
+}
+.MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard .originprice {
+  transition: all .3s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  padding: 1.5rem 0;
+  text-align: center;
+  border-top: 1px solid var(--text-light-primary);
+  width: 100%;
+  border-bottom: 1px solid var(--text-light-primary);
+  margin: 1rem 0;
+}
+
+.MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard .ButtonMain {
+  padding: 0.6rem 0;
+  font-weight: 500;
+  width: 100%;
+  font-size: 1.1rem;
+}
+.MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard .featureHeading {
+  padding: 0.2rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  display: block;
+  background-color: #e8e8e8;
+  text-align: center;
+}
+.MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard .featureList {
+  width: 75%;
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard .featureList .list{
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  font-weight: 400;
+}
+.MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard .featureList .list .circle{
+  min-width: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background-color: #FFB6D9;
+}
+.MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard .featureList .list .circle.active{
+  background-color: #4E00B2;
+}
+
+/* =============== OverallUserCustomPlan ==================== */
+.OverallUserCustomPlan.MatrimonyUserCustomPlan .customPlan_heading{
+  text-align: center;
+  margin-top: 0;
+}
+.OverallUserCustomPlan.MatrimonyUserCustomPlan{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+@media (min-width:299px) and (max-width:1349px) {
+  .OverallUserCustomPlan.MatrimonyUserCustomPlan{
+    width: 90%;
+  }
+}
+@media (min-width:299px) and (max-width:1149px) {
+  .OverallUserCustomPlan.MatrimonyUserCustomPlan{
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (min-width:299px) and (max-width:799px) {
+  .MatrimonyUserCustomPlan .offerCards {
+    row-gap: 1rem;
+  }
+  .MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard{
+    min-width: 49%;
+    width: 49%;
+  }
+  .MatrimonyUserCustomPlan .customPlan_heading .title{
+    font-size: 3rem;
+  }
+}
+@media (min-width:299px) and (max-width:499px) {
+  .MatrimonyUserCustomPlan .customPlan_heading .title{
+    font-size: 2rem;
+  }
+  .MatrimonyUserCustomPlan .customPlan_heading .subTitle{
+    font-size: 1.2rem;
+  }
+  .MatrimonyUserCustomPlan .offerCards .MatrimonyCustomOfferCard{
+    min-width: 100%;
+    width: 100%;
+  }
+}
+
+.MatrimonyUserCustomPlan.dash-card{
+  width: 100%;
+  padding: 0;
+}

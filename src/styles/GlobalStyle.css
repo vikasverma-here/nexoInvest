@@ -1,0 +1,907 @@
+.section-inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ss-button {
+    align-items: center;
+    appearance: none;
+    background-color: #fcfcfd;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395a;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.bgColor{
+background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.ss-button:focus {
+    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.ss-button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.ss-button:active {
+    box-shadow: #d6d6e7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.ss-button2 {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #fefefe;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.ss-button2::after,
+.ss-button2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all 0.4s;
+}
+
+.ss-button2::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    /* color: white */
+    background:rgba(255, 255, 255, 0.454);
+    border-radius: 10px;
+}
+
+.ss-button2::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #03bcc67d;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+.ss-button2:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+
+.ss-button2:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.ss-button2:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+
+.SubHeading1 {
+    font-family: var(--ff-monserrat);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: var(--main-purple);
+}
+
+.Button2 {
+    background: #162d3a;
+    border-radius: 12px;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+
+.Heading1 {
+    font-family: var(--ff-monserrat);
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 6rem;
+    color: var(--white);
+    letter-spacing: -0.02em;
+}
+
+.para {
+    font-family: var(--ff-monserrat);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--white);
+}
+
+.img-drop-shadow {
+    filter: drop-shadow(0 0 10px rgba(251, 225, 225, 0.3))
+        drop-shadow(0 0 15px rgba(243, 240, 240, 0.2))
+        drop-shadow(0 0 20px rgba(251, 249, 249, 0.1));
+}
+.cancel-btn {
+    background-color: red !important;
+}
+
+.Button3 {
+    box-shadow: 0px 10px 60px 0px #ae7129cc, 0px 20px 60px 0px #e8cd6e33,
+        -20px -20px 50px 0px #d3469b66, 0px 0px 20px 0px #ffffff99 inset;
+    background: linear-gradient(0deg, #fff500, #fff500),
+        radial-gradient(
+            92.05% 200% at 94.89% -132.81%,
+            #ff7a00 67.59%,
+            rgba(255, 199, 0, 0.38) 100%
+        ),
+        radial-gradient(
+            71.74% 117.31% at 32.95% 0%,
+            rgba(255, 137, 137, 0.92) 21.25%,
+            rgba(255, 169, 106, 0.57) 88.62%
+        ),
+        radial-gradient(
+            39.2% 181% at 5.68% 100%,
+            rgba(246, 251, 34, 0.51) 0%,
+            rgba(255, 158, 69, 0) 100%
+        ),
+        radial-gradient(
+            31.25% 236.33% at 96.59% 31.25%,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0) 100%
+        );
+}
+
+.ss-card {
+    /* background-color: rgba(255, 255, 255, 0.228); */
+    background-image: linear-gradient(8deg, #fff0, #fff2, #fff3);
+    border-radius: 20px;
+    border: 1px solid rgb(212, 212, 212);
+    backdrop-filter: blur(20px);
+    transition: all 0.4s ease;
+}
+
+.nav-link.logout {
+    color: red;
+}
+
+.Button5 {
+    color: #fff;
+    padding: 15px 25px;
+    background-color: #d2a638;
+    background-image: radial-gradient(
+            93% 87% at 87% 89%,
+            rgba(0, 0, 0, 0.23) 0%,
+            transparent 86.18%
+        ),
+        radial-gradient(
+            66% 66% at 26% 20%,
+            rgba(255, 255, 255, 0.55) 0%,
+            rgba(255, 255, 255, 0) 69.79%,
+            rgba(255, 255, 255, 0) 100%
+        );
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25),
+        inset 0px 3px 9px rgba(255, 255, 255, 0.3),
+        inset 0px 1px 1px rgba(255, 255, 255, 0.6),
+        inset 0px -8px 36px rgba(0, 0, 0, 0.3),
+        inset 0px 1px 5px rgba(255, 255, 255, 0.6),
+        2px 19px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    height: fit-content;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.Button5:active .UserHome .top-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.ss-card.welcome-card {
+    width: 100%;
+    position: relative;
+    padding: 4rem !important;
+    margin-top: 6rem;
+}
+
+.ss-card.welcome-card .heading {
+    font-size: 3rem;
+    line-height: 3.4rem;
+    color: var(--text-secondary);
+}
+
+.ss-card.welcome-card .para1 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-top: 1rem;
+    display: block;
+}
+
+.ss-card.welcome-card .para1.bold {
+    font-weight: 800;
+}
+
+.ss-card.welcome-card .value {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: var(--text-secondary);
+    font-weight: 800;
+    margin: 1.2rem 0;
+}
+
+.ss-card.welcome-card .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ss-card.welcome-card .content .c-right {
+    width: 45rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.ss-card.welcome-card .Button5 {
+    animation: zigzag 2s infinite alternate-reverse;
+}
+
+.ss-card.welcome-card .btn-box {
+    margin-top: 2rem;
+}
+
+@keyframes zigzag {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.modal-title {
+    color: var(--text-secondary);
+}
+
+.inputFieldBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputFieldBox .inputLabel,
+.PaymentAcceptModal-modal
+    .btm-container
+    .input-container
+    .image-input
+    .form-label,
+.p-column-title {
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+}
+
+.inputFieldBox input,
+.inputFieldBox textarea,
+.inputFieldBox select,
+.p-column-filter.p-inputtext {
+    padding: 1rem 1.4rem;
+    border-radius: 1rem;
+    border: 1px solid var(--text-secondary);
+    /* background-color: transparent; */
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.inputFieldBox textarea {
+    min-height: 10rem;
+}
+.inputFieldBox .pass-box input {
+    width: 100%;
+    padding-right: 3rem;
+}
+.inputFieldBox .pass-box {
+    width: 100%;
+    position: relative;
+}
+.inputFieldBox .pass-box button.eye {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    column-gap: 2%;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.btns {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.SwitchPromoter-modal .inputFieldBox {
+    width: 48%;
+}
+
+.SwitchPromoter-modal .inputFieldBox.TextareaField {
+    width: 100%;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+    background-color: transparent;
+}
+
+.p-datatable .p-paginator-bottom {
+    background-color: transparent;
+    border: none;
+}
+
+.p-column-header-content,
+.p-column-filter {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.p-paginator-page,
+.p-dropdown,
+.p-paginator-element,
+.p-dropdown-label,
+.p-inputtext {
+    font-size: 1.4rem;
+}
+
+.p-dropdown {
+    background-color: transparent;
+    padding: 2px;
+}
+
+.martop {
+    margin-top: 2rem;
+}
+
+.ss-card.half {
+    width: 50%;
+    margin: 5rem auto;
+}
+
+.Withdrawal .heading,
+.MemberTopup .heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.ss-card.half .input-container .inputFieldBox {
+    width: 100%;
+}
+
+.ss-card.half .ButtonLinear {
+    width: 50%;
+    padding: 2rem;
+}
+
+.WithdrawalReport .top-wrapper {
+    display: flex;
+    column-gap: 2%;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.WithdrawalReport .top-wrapper .ss-card {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.WithdrawalReport .top-wrapper .ss-card .txt .heading {
+    font-size: 2rem;
+}
+
+.WithdrawalReport .top-wrapper .ss-card .txt .para1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 1.4rem;
+}
+
+.multiple-action-buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+.multiple-action-buttons button {
+    width: fit-content;
+}
+.multiple-action-buttons button.ss-success {
+    background-color: #18af18;
+}
+.multiple-action-buttons button.ss-danger {
+    background-color: #ff0000;
+}
+
+/* .ToggleButton {
+	transform: scale(2);
+} */
+
+.linearBg {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 1) 0%,
+        rgba(253, 187, 45, 1) 100%
+    );
+    color: var(--white);
+}
+
+.ToggleButton input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 50px;
+    height: 30px;
+    background: #ccc;
+    border-radius: 50px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.ToggleButton input:checked[type="checkbox"] {
+    background: #7da6ff;
+}
+
+.ToggleButton input[type="checkbox"]::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: scale(0.85);
+    transition: 0.4s;
+}
+
+.ToggleButton input:checked[type="checkbox"]::after {
+    left: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .ss-card.welcome-card .content .c-right {
+        display: none;
+    }
+
+    .ss-card.welcome-card {
+        padding: 2rem !important;
+    }
+
+    .ss-card.welcome-card .heading {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    .ss-card.welcome-card .para1 {
+        font-size: 1.6rem;
+    }
+
+    .p-filter-column {
+        min-width: 12rem;
+    }
+
+    .ss-card.half,
+    .WithdrawalReport .top-wrapper .ss-card {
+        width: 100%;
+    }
+
+    .WithdrawalReport .top-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .section-inner {
+        width: 92%;
+    }
+
+    .ss-button2 {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .Heading1 {
+        font-size: 3rem;
+    }
+}
+
+.error {
+    font-size: 1.4rem !important;
+    color: red !important;
+}
+
+/* PaymentAcceptModal */
+
+.PaymentAcceptModal-modal .closeBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2.6rem;
+    color: red;
+    cursor: pointer;
+}
+.PaymentAcceptModal-modal .qr-img {
+    width: 20rem;
+    margin: 3rem auto;
+}
+.PaymentAcceptModal-modal .top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    margin-top: 2rem;
+}
+.PaymentAcceptModal-modal .top-container .title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+.PaymentAcceptModal-modal .top-container p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+.PaymentAcceptModal-modal .btm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+.PaymentAcceptModal-modal .btm-container .title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+.PaymentAcceptModal-modal .btm-container .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 2rem;
+}
+.PaymentAcceptModal-modal .btm-container .input-container {
+    display: flex;
+    width: 100%;
+}
+.PaymentAcceptModal-modal .btm-container .input-container .inputFieldBox {
+    width: 100%;
+}
+.PaymentAcceptModal-modal .btm-container .input-container .image-input {
+    width: 100%;
+    margin-top: 2rem;
+}
+.PaymentAcceptModal-modal
+    .btm-container
+    .input-container
+    .image-input
+    .form-label {
+    margin-bottom: 1.2rem;
+}
+
+/* tree node */
+
+/* General setup for tree container */
+.tree-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Wrapper for nodes to ensure proper position for the line */
+.node-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the card */
+.node-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    position: relative; /* Needed for positioning link lines */
+}
+
+/* Style for each node name */
+.node-name {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Add some spacing and a custom color for the admin node */
+.level-0 .node-card {
+    width: 300px;
+    font-size: 1.2em;
+    margin-top: 50px;
+    background-color: #e4f7fc;
+}
+
+/* Horizontal layout for child nodes */
+.children-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Horizontal layout for sub-child nodes */
+.tree-node .children-container {
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+/* Add visual separation between child cards */
+.tree-node.level-1 .node-card {
+    background-color: #f4f4f9;
+    border-radius: 10px;
+}
+
+/* Create the lines that connect parent to child and sub-child nodes */
+
+/* Line from parent node to child node */
+.tree-node.level-0::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Position it below the admin node */
+    left: 50%;
+    width: 2px;
+    height: 20px; /* Adjust height to make the link line */
+    background-color: #333;
+    transform: translateX(-50%); /* Center the line */
+    z-index: -1; /* Ensure the line stays behind the cards */
+}
+
+/* Line from child node to its own children (sub-child nodes) */
+.tree-node.level-1::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Position it below the child node */
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: #333;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* Horizontal line connecting child nodes (siblings) */
+.tree-node .children-container .tree-node::before {
+    content: "";
+    position: absolute;
+    top: 50%; /* Position the line to connect nodes */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.p-column-title {
+    text-wrap: nowrap;
+}
+
+/* model show css */
+.modelContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: rgba(229, 229, 251, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.modelContainer .inner-wrapper {
+    width: 100%;
+    padding: 2rem;
+}
+
+.xicon {
+    width: 100%;
+    text-align: right;
+    font-size: 24px;
+    padding: 0rem 1rem;
+
+    cursor: pointer;
+    color: white;
+}
+
+.card-container {
+    width: 400px;
+    height: auto;
+    padding: 1rem 0rem;
+    background-color: black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #161616;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 8px 0;
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1.4rem 1.8rem;
+}
+
+.btn-custom:hover {
+    background-color: #162d75;
+    /* Darker Blue */
+    transform: scale(1.05);
+}
+
+.iconImg {
+    width: 5rem;
+    min-width: 5rem;
+    height: 5rem;
+    padding: 0.6rem;
+    border-radius: 8px;
+    background-color: #545454af;
+    margin-right: 8px;
+}
+
+.BNBPaymentModal .payment-container {
+    padding: 2rem;
+}
+
+.BNBPaymentModal h4 {
+    color: var(--text-primary);
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.BNBPaymentModal h3 {
+    color: var(--white);
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-weight: 700;
+    background-color: #686868ad;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.BNBPaymentModal .error {
+    width: 100%;
+    text-align: center;
+}
+
+.BNBPaymentModal .Button2 {
+    width: 100%;
+    background-color: #15618d;
+}
+
+.BNBPaymentModal .Button2.closeBtn {
+    background-color: red;
+    width: fit-content;
+}
+
+.BNBPaymentModal .close-modal {
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.disabledBtn {
+    cursor: not-allowed !important;
+    background-color: #686868 !important;
+    opacity: 0.5 !important;
+}

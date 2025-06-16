@@ -1,0 +1,200 @@
+:root {
+    --nav-width: 56px;
+    --font-bold: 500;
+    --first-color: var(--white);
+    --white-color: var(--text-secondary);
+    --body-font: var(--ff-poppins);
+}
+.Sidebar {
+    transition: .5s;
+    font-family: var(--body-font);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    padding: 1.25rem .5rem 2rem;
+    transition: .5s;
+    z-index: 100;
+}
+
+.Sidebar .nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    transition: .5s;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.Sidebar .nav-logo {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    width: 16rem;
+    display: block;
+    transition: .5s;
+}
+
+.Sidebar .nav-logo-text {
+    color: var(--white-color);
+    font-weight: var(--font-bold);
+}
+
+.Sidebar .nav-toggle {
+    position: absolute;
+    top: 1.1rem;
+    right: -0.5rem;
+    width: 18px;
+    height: 18px;
+    background-color: var(--main-purple);
+    border-radius: 50%;
+    font-size: 1.7rem;
+    color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Sidebar .nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.Sidebar .nav-item {
+    margin-bottom: 1rem;
+}
+
+.Sidebar .nav-link,
+.Sidebar .accordion-item .accordion-header .accordion-button {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    /* color: var(--white-color); */
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+    border: none !important;
+}
+.Sidebar .accordion-item .accordion-header .accordion-button{
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0;
+}
+.Sidebar .accordion-item .accordion-header .accordion-button:not(.collapsed){
+    background-color: rgba(77, 77, 77, 0.299);
+    border: none;
+    box-shadow: none;
+    color: var(--white);
+    margin: 0;
+}
+.Sidebar .accordion-item{
+    background-color: transparent;
+    border: none;
+}
+.Sidebar .accordion-item .nav-link.accordion-header{
+    padding: 0;
+    margin-bottom: 0;
+}
+.Sidebar .accordion-body{
+    padding: 1rem;
+}
+
+.Sidebar .nav-link:hover,
+.Sidebar .accordion-item .accordion-header .accordion-button:hover {
+    color: var(--first-color);
+    background-color: var(--main-purple);
+}
+
+.Sidebar .nav-link svg {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.Sidebar .nav-text {
+    font-weight: var(--font-bold);
+}
+
+.Sidebar.show {
+    width: 28rem;
+}
+
+.Sidebar .expander {
+    padding: 1rem 0 0 12rem;
+}
+
+.Sidebar .rotate {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+.Sidebar .active {
+    background-color: var(--main-purple);
+    color: var(--first-color);
+}
+
+.Sidebar.hide .nav-text {
+    display: none;
+}
+
+.Sidebar.hide .nav-link {
+    width: fit-content;
+}
+
+.Sidebar.hide .nav-link svg {
+    margin-right: 0;
+}
+
+.Sidebar.hide .nav-item {
+    margin: auto;
+    width: fit-content;
+}
+.Sidebar.hide .nav-logo {
+    width: 4rem;
+    transition: .5s;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Sidebar.show {
+        position: absolute;
+        z-index: 999;
+    }
+    .Sidebar.hide{
+        width: 28rem;
+        left: -28rem;
+        position: absolute;
+    }
+    .Sidebar.hide .nav-toggle{
+        right: -28px;
+        top: 5px;
+        width: 24px;
+        height: 24px;
+        font-size: 2rem;
+    }
+
+    
+}
+
+/* Add this at the end of Sidebar.css */
+.blink {
+    animation: blinkAnimation 1s infinite;
+    color: red !important;
+  }
+  
+  @keyframes blinkAnimation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  

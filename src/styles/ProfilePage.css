@@ -1,0 +1,23 @@
+.profileImg{
+    min-width: 8rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileImg img{
+    height: 100%;
+}
+.ProfilePage .input-container{
+    width: 100%;
+}
+.ProfilePage .input-container .inputFieldBox{
+    width: 32%;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .ProfilePage .input-container .inputFieldBox{
+        width: 100%;
+    }
+}

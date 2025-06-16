@@ -1,0 +1,131 @@
+.OTPPopup_v1 .modal-content {
+    overflow: hidden;
+  }
+  .OTPPopup_v1 .modal-body {
+    padding: 2rem 0;
+  }
+  .OTPPopup_v1 .inner_box {
+    width: 100%;
+    display: flex;
+  }
+  .OTPPopup_v1 .inner_box .input_container{
+      min-width: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 3rem;
+  }
+  .OTPPopup_v1 .inner_box .heading {
+    font-size: 4rem;
+    color: var(--text-secondary);
+  }
+  .OTPPopup_v1 .inner_box .valueNumber {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0.6rem 0;
+    color: var(--text-secondary);
+  }
+  .OTPPopup_v1 .inner_box .imgIcon {
+    min-width: 5.5rem;
+    width: 5.5rem;
+    margin: 1rem 0;
+  }
+  .OTPPopup_v1 .inner_box .input_container_inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+  .OTPPopup_v1 .inner_box .input_container_inner .headingName {
+    font-size: 1.2rem;
+    text-align: left;
+    color: var(--text-secondary);
+  }
+  .OTPPopup_v1 .inner_box .input_container_inner .fourInput {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .OTPPopup_v1 .inner_box .input_container_inner .fourInput input {
+    min-width: 15%;
+    width: 15%;
+    height: 4.2rem;
+    background-color: #ebebed;
+    box-shadow: 0px 0px 0px 0px #4c4d4d inset;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #9b9b9c;
+    border-radius: 0.4rem;
+  }
+  .OTPPopup_v1 .inner_box .input_container_inner .fourInput input.error {
+    border: 0.08px solid red;
+    background-color: #ff5f5f33;
+    color: red;
+  }
+  
+  .OTPPopup_v1 .inner_box .input_container .verify {
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--white);
+    background-color: #212529;
+    padding: 1rem 0;
+    border-radius: 0.6rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+  .OTPPopup_v1 .inner_box .input_container .errorMsg {
+    font-size: 1rem;
+    color: red;
+    text-align: center;
+  }
+  .OTPPopup_v1 .inner_box .input_container .resend {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #212529ab;
+  }
+
+  .PaymentAcceptModal-modal{
+    color: var(--text-secondary);
+  }
+  .PaymentAcceptModal-modal .inner-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    margin-top: 3rem;
+  }
+  .PaymentAcceptModal-modal .inner-wrapper .msg{
+    display: flex;
+    gap: 2rem;
+  }
+  .PaymentAcceptModal-modal .inner-wrapper .msg h5{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+  .PaymentAcceptModal-modal .inner-wrapper .msg .para{
+    color: var(--text-secondary);
+  }
+  .ForgotPassword-modal .input_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ForgotPassword-modal .main-heading{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: fit-content;
+  }
+
+  .ForgotPassword-modal .modal-body{
+    padding: 2rem;
+  }

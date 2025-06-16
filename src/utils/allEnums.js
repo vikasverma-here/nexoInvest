@@ -1,0 +1,1 @@
+  export const LEVEL_NAME_ENUM = ["Silver", "Gold", "Platinum", "Diamond", "Royal Diamond"];

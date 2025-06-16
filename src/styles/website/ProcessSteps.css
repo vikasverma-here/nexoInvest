@@ -1,0 +1,154 @@
+
+
+.process-section-main{
+    margin-top: 5rem !important;
+}
+.ProcessSteps{
+    width: 100%;
+}
+.ProcessSteps .container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.ProcessSteps .step-wrapper {
+    margin: 30px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.ProcessSteps .linestep {
+    text-align: center;
+    max-width: 250px;
+    position: absolute;
+}
+
+.ProcessSteps .linestep .num {
+    color: #fff;
+    border-radius: 100px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    background: var(--main-purple);
+    font-size: 1.2rem;
+}
+
+.ProcessSteps .linestep .ss-card {
+    width: 250px;
+    position: absolute;
+    margin-top: 7px;
+    padding: 1.2rem;
+}
+.ProcessSteps .linestep h1 {
+    font-weight: 600;
+    line-height: normal;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.ProcessSteps .linestep p {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 1.6rem;
+}
+
+.ProcessSteps .linestep.ss-cardtop {
+    bottom: 50px;
+    left: -110px;
+}
+
+.ProcessSteps .linestep .ss-card.bottom {
+    left: -110px;
+}
+
+.ProcessSteps .linestep .ss-card.left {
+    width: 200px;
+    right: -33px;
+    top: 41px;
+}
+
+.ProcessSteps .linestep .ss-card.right {
+    width: 200px;
+    left: -79px;
+    top: 39px;
+}
+.ProcessSteps .linestep .ss-card.to-right{
+    left: 49px;
+    top: -47px;
+}
+
+.ProcessSteps .linestep {
+    visibility: hidden;
+}
+
+.ProcessSteps .path {
+    visibility: hidden;
+}
+
+.ProcessSteps .move-line .path {
+    visibility: visible;
+    stroke-dasharray: 3700;
+    stroke-dashoffset: 3700;
+    animation: moveline 4s linear forwards;
+}
+
+.ProcessSteps .move-line .linestep {
+    animation-name: show-step-item;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.ProcessSteps .move-line .linestep1 {
+    animation-delay: 0.4s;
+}
+
+.ProcessSteps .move-line .linestep2 {
+    animation-delay: 0.8s;
+}
+
+.ProcessSteps .move-line .linestep3 {
+    animation-delay: 1.2s;
+}
+
+.ProcessSteps .move-line .linestep4 {
+    animation-delay: 1.6s;
+}
+
+.ProcessSteps .move-line .linestep5 {
+    animation-delay: 2s;
+}
+
+.ProcessSteps .move-line .linestep6 {
+    animation-delay: 2.4s;
+}
+
+.ProcessSteps .move-line .linestep7 {
+    animation-delay: 2.8s;
+}
+
+.ProcessSteps .move-line .linestep8 {
+    animation-delay: 3.2s;
+}
+
+
+
+@keyframes show-step-item {
+    from {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+
+    to {
+        visibility: visible;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes moveline {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
