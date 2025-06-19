@@ -98,22 +98,22 @@ const UserHome = () => {
                 {/* ======= hero section start ======= */}
                 <div
                     className="hero-section"
-                    // style={{ backgroundImage: `url(${bgImg})` }}
+                // style={{ backgroundImage: `url(${bgImg})` }}
                 >
                     <div className="inner">
                         <div className="left">
                             <h1
                                 data-aos="fade-right"
                                 className="title textBg"
-                                // style={{ backgroundImage: `url(${trainGif2})` }}
+                            // style={{ backgroundImage: `url(${trainGif2})` }}
                             >
                                 {UserWebsiteContent?.heroSection?.title}
                             </h1>
-                            
+
                             <h1
                                 data-aos="fade-right"
                                 className="title textBg"
-                                // style={{ backgroundImage: `url(${trainGif})` }}
+                            // style={{ backgroundImage: `url(${trainGif})` }}
                             >
                                 {UserWebsiteContent?.heroSection?.subTitle}
                             </h1>
@@ -233,35 +233,35 @@ const UserHome = () => {
                                     <Accordion>
                                         {faqTab === 1
                                             ? faqData?.general?.map(
-                                                  (item, i) => (
-                                                      <Accordion.Item
-                                                          key={`general-${i}`}
-                                                          eventKey={`general-${i}`}
-                                                      >
-                                                          <Accordion.Header>
-                                                              {item?.question}
-                                                          </Accordion.Header>
-                                                          <Accordion.Body>
-                                                              {item?.answer}
-                                                          </Accordion.Body>
-                                                      </Accordion.Item>
-                                                  )
-                                              )
+                                                (item, i) => (
+                                                    <Accordion.Item
+                                                        key={`general-${i}`}
+                                                        eventKey={`general-${i}`}
+                                                    >
+                                                        <Accordion.Header>
+                                                            {item?.question}
+                                                        </Accordion.Header>
+                                                        <Accordion.Body>
+                                                            {item?.answer}
+                                                        </Accordion.Body>
+                                                    </Accordion.Item>
+                                                )
+                                            )
                                             : faqData?.preSale?.map(
-                                                  (item, i) => (
-                                                      <Accordion.Item
-                                                          key={`preSale-${i}`}
-                                                          eventKey={`preSale-${i}`}
-                                                      >
-                                                          <Accordion.Header>
-                                                              {item?.question}
-                                                          </Accordion.Header>
-                                                          <Accordion.Body>
-                                                              {item?.answer}
-                                                          </Accordion.Body>
-                                                      </Accordion.Item>
-                                                  )
-                                              )}
+                                                (item, i) => (
+                                                    <Accordion.Item
+                                                        key={`preSale-${i}`}
+                                                        eventKey={`preSale-${i}`}
+                                                    >
+                                                        <Accordion.Header>
+                                                            {item?.question}
+                                                        </Accordion.Header>
+                                                        <Accordion.Body>
+                                                            {item?.answer}
+                                                        </Accordion.Body>
+                                                    </Accordion.Item>
+                                                )
+                                            )}
                                     </Accordion>
                                 </div>
                             </div>

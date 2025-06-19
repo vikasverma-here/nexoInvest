@@ -7,7 +7,9 @@ import { AuthenticatedRoutes } from "../../constants/Routes";
 import { RiLogoutCircleRLine } from "react-icons/ri";
 import { Accordion } from "react-bootstrap";
 import { FaCaretRight } from "react-icons/fa";
-import navLogo from "../../assets/website/nexoLogo1.png";
+// import navLogo from "../../assets/website/nexoLogo1.png";
+// import nexoLogo1 from "../../screens/assets/brandsLogo/nexoLogo1.png";
+import nexoLogo2 from "../../screens/assets/brandsLogo/nexoLogo2.png";
 
 const Sidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -82,7 +84,7 @@ const Sidebar = () => {
       <nav className="nav">
         <div>
           <Link to={AuthenticatedRoutes.USER_DASHBOARD} className="nav-logo">
-            <img src={navLogo} alt="logo" className="nav-logo-icon" />
+            <img src={nexoLogo2} alt="logo" className="nav-logo-icon scale-150" />
           </Link>
 
           <div className="nav-toggle" onClick={toggleSidebar}>
@@ -111,14 +113,12 @@ const Sidebar = () => {
                             <li key={option?.id} className="nav-item">
                               <Link
                                 to={option?.link}
-                                className={`nav-link ${
-                                  activeLink === option?.id ? "active" : ""
-                                } ${
-                                  option?.name?.toLowerCase() === "news and notification" &&
-                                  newNotification
+                                className={`nav-link ${activeLink === option?.id ? "active" : ""
+                                  } ${option?.name?.toLowerCase() === "news and notification" &&
+                                    newNotification
                                     ? "blink"
                                     : ""
-                                }`}
+                                  }`}
                                 onClick={() => handleLinkClick(option?.id, option?.name)}
                               >
                                 <FaCaretRight />
@@ -133,13 +133,11 @@ const Sidebar = () => {
                 ) : (
                   <Link
                     to={item?.link}
-                    className={`nav-link ${
-                      activeLink === item?.id ? "active" : ""
-                    } ${
-                      item?.name?.toLowerCase() === "news and notification" && newNotification
+                    className={`nav-link ${activeLink === item?.id ? "active" : ""
+                      } ${item?.name?.toLowerCase() === "news and notification" && newNotification
                         ? "blink"
                         : ""
-                    }`}
+                      }`}
                     onClick={() => handleLinkClick(item?.id, item?.name)}
                   >
                     {item?.icon}

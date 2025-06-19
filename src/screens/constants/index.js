@@ -33,9 +33,7 @@ import {
   sliders04,
   telegram,
   twitter,
-  yourlogo,
 } from "../assets";
-import { links } from "../config";
 import bran1 from "../assets/brandsLogo/bitcoin-btc-logo.png";
 import bran5 from "../assets/brandsLogo/bnb-bnb-logo.png";
 import bran2 from "../assets/brandsLogo/dogecoin-doge-logo.png";
@@ -43,26 +41,26 @@ import bran3 from "../assets/brandsLogo/ethereum-eth-logo.png";
 import bran4 from "../assets/brandsLogo/tether-usdt-logo.png";
 
 export const navigation = [
-  {
-    id: "0",
-    title: "Features",
-    url: "#features",
-  },
-  {
-    id: "1",
-    title: "Pricing",
-    url: "#pricing",
-  },
-  {
-    id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
-    id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
-  },
+  // {
+  //   id: "0",
+  //   title: "Features",
+  //   url: "#features",
+  // },
+  // {
+  //   id: "1",
+  //   title: "Pricing",
+  //   url: "#pricing",
+  // },
+  // {
+  //   id: "2",
+  //   title: "How to use",
+  //   url: "#how-to-use",
+  // },
+  // {
+  //   id: "3",
+  //   title: "Roadmap",
+  //   url: "#roadmap",
+  // },
   {
     id: "4",
     title: "login",

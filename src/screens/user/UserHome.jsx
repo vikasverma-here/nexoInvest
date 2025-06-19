@@ -63,7 +63,7 @@ const UserHome = () => {
                             <span className="para1 bold">Ready to get started?</span>
                             <p className="para1">Check out your dashboard to begin!</p>
                             <div className="btn-box">
-                                <Button5 onClick={() => navigate(AuthenticatedRoutes.OUR_PLANS)} name={"Buy Nexocoin"} />
+                                <Button5 onClick={() => navigate(AuthenticatedRoutes.OUR_PLANS)} name={"Buy Nexo"} />
                             </div>
                         </div>
                         <div className="c-right">

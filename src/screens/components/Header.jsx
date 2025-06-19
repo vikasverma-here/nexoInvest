@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 // import { brainwave } from "../assets";
-import nexoLogo1 from "../../assets/website/nexoLogo1.png"
+import nexoLogo1 from "../../screens/assets/brandsLogo/nexoLogo2.png"
 import MenuSvg from "../assets/svg/MenuSvg";
 import { navigation } from "../constants";
 import Button from "./Button";
@@ -29,12 +29,12 @@ const Header = () => {
     // enablePageScroll();
     // setOpenNavigation(false);
 
-     navigate("/login")
+    navigate("/login")
   };
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 !bg-transparent lg:bg-n-8/90 lg:bg-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
+      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 !bg-transparent  lg:bg-n-8/90 lg:bg-blur-xl ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
         }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 ">
@@ -43,7 +43,7 @@ const Header = () => {
             src={nexoLogo1}
 
             alt="Brainwave"
-            className="pointer-events-none  select-none"
+            className="pointer-events-none scale-y-150 scale-x-150 border-none select-none"
           />
         </a>
 
@@ -77,13 +77,12 @@ const Header = () => {
             {navigation.map((item) => (
               <a
                 key={item.id}
-                href={item.url}
-                target={item.external ? "_blank" : "_self"}
+
                 rel={item.external && "noreferrer noopener"}
                 onClick={(e) => {
                   handleClick();
                   if (item.title === "login") {
-                   
+
                   }
                 }}
                 className={`block relative font-code text-4xl uppercase text-n-1 transition-colors hover:text-color-1 ${item.onlyMobile && "lg:hidden"
@@ -107,7 +106,7 @@ const Header = () => {
 
         <Button
           onClick={toggleNavigation}
-          className="ml-auto lg:hidden w-20"
+          className="ml-auto lg:hidden w-20 h-10"
         >
           <MenuSvg openNavigation={openNavigation} />
         </Button>
